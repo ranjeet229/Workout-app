@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:todo_app/pages/home_page.dart';
 import 'dart:async';
 
+import 'package:todo_app/workout%20app/Home_VIew.dart';
+import 'package:todo_app/workout%20app/welocme_View.dart';
+
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();
@@ -30,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
 
     Timer(Duration(seconds: 4), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => HomePage()),
+        MaterialPageRoute(builder: (context) => WelcomeView()),
       );
     });
   }
@@ -61,7 +64,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                 shape: CircleBorder(),
                 child: CircleAvatar(
                   radius: 60,
-                  backgroundImage: AssetImage('assets/images/todo1.png'),
+                  backgroundImage: AssetImage('assets/images/w5.jpg'),
                 ),
               ),
               SizedBox(height: 20),
@@ -72,7 +75,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
                   child: Column(
                     children: [
                       Text(
-                        'To-do',
+                        'Fit-Fix',
                         style: TextStyle(
                           fontSize: 40.0,
                           fontWeight: FontWeight.bold,
